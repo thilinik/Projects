@@ -64,3 +64,15 @@ summary[i,6] <- logistic_misclassifications[[1]]
 summary[i,7] <- logistic_misclassifications[[2]]
 
 }
+
+
+
+a <- rnorm(100)
+b <- rnorm(100)
+
+library(ggplot2)
+library(tidyverse)
+
+df <- tibble(a=a,b=b)
+
+df %>% ggplot(aes(a,b))+geom_point()
